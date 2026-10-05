@@ -112,7 +112,7 @@ export default function Footer({ onOpenQuoteModal }) {
 
         </div>
 
-        {/* Bottom Bar & SEO links */}
+        {/* Bottom Bar */}
         <div style={{
           borderTop: '1px solid rgba(255, 255, 255, 0.1)',
           paddingTop: '1.5rem',
@@ -121,7 +121,7 @@ export default function Footer({ onOpenQuoteModal }) {
           alignItems: 'center',
           flexWrap: 'wrap',
           gap: '1rem',
-          fontSize: '0.8rem',
+          fontSize: '0.85rem',
           color: '#64748B'
         }}>
           <div>
@@ -129,11 +129,9 @@ export default function Footer({ onOpenQuoteModal }) {
           </div>
 
           <div style={{ display: 'flex', gap: '1.5rem' }}>
-            <Link to="/sitemap" style={{ color: '#94A3B8', fontWeight: 600 }}>
-              Visual Sitemap
-            </Link>
+            <Link to="/contact" style={{ color: '#94A3B8' }}>Contact Us</Link>
             <a href="/sitemap.xml" target="_blank" rel="noreferrer" style={{ color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
-              XML Sitemap <ExternalLink size={12} />
+              Sitemap <ExternalLink size={12} />
             </a>
             <a href="/robots.txt" target="_blank" rel="noreferrer" style={{ color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
               Robots.txt <ExternalLink size={12} />
