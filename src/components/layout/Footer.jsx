@@ -128,14 +128,10 @@ export default function Footer({ onOpenQuoteModal }) {
             © {new Date().getFullYear()} Reyna India Engineering Services Pvt. Ltd. All rights reserved.
           </div>
 
-          <div style={{ display: 'flex', gap: '1.5rem' }}>
-            <Link to="/contact" style={{ color: '#94A3B8' }}>Contact Us</Link>
-            <a href="/sitemap.xml" target="_blank" rel="noreferrer" style={{ color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
-              Sitemap <ExternalLink size={12} />
-            </a>
-            <a href="/robots.txt" target="_blank" rel="noreferrer" style={{ color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
-              Robots.txt <ExternalLink size={12} />
-            </a>
+          <div>
+            <Link to="/contact" style={{ color: '#F59E0B', fontWeight: 600 }}>
+              Contact Us
+            </Link>
           </div>
         </div>
 
