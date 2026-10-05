@@ -129,13 +129,15 @@ export default function Footer({ onOpenQuoteModal }) {
           </div>
 
           <div style={{ display: 'flex', gap: '1.5rem' }}>
+            <Link to="/sitemap" style={{ color: '#94A3B8', fontWeight: 600 }}>
+              Visual Sitemap
+            </Link>
             <a href="/sitemap.xml" target="_blank" rel="noreferrer" style={{ color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
-              Sitemap <ExternalLink size={12} />
+              XML Sitemap <ExternalLink size={12} />
             </a>
             <a href="/robots.txt" target="_blank" rel="noreferrer" style={{ color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
               Robots.txt <ExternalLink size={12} />
             </a>
-            <Link to="/contact" style={{ color: '#94A3B8' }}>Privacy Policy</Link>
           </div>
         </div>
 

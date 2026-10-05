@@ -13,6 +13,7 @@ import ProductsPage from './pages/ProductsPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ResourcesPage from './pages/ResourcesPage';
 import ContactPage from './pages/ContactPage';
+import SitemapPage from './pages/SitemapPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -63,6 +64,10 @@ export default function App() {
           <Route
             path="/contact"
             element={<ContactPage />}
+          />
+          <Route
+            path="/sitemap"
+            element={<SitemapPage />}
           />
           <Route
             path="*"
