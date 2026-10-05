@@ -310,17 +310,17 @@ img {
   background-color: #128C7E;
 }
 
-/* Responsive Breakpoints & Device Utility Classes */
+/* Responsive Breakpoints & Mobile UI Utility Classes */
 .show-tablet {
   display: none !important;
 }
 
 .hide-tablet {
-  display: flex;
+  display: flex !important;
 }
 
 .hide-mobile {
-  display: inline-flex;
+  display: inline-flex !important;
 }
 
 /* Tablet & iPad (<= 1024px) */
@@ -332,10 +332,11 @@ img {
     display: none !important;
   }
   .section-title {
-    font-size: 2rem;
+    font-size: 1.85rem !important;
   }
   .grid-3 {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 1.5rem !important;
   }
 }
 
@@ -345,24 +346,35 @@ img {
     display: none !important;
   }
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
   }
   .section-desc {
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
+    font-size: 0.9rem !important;
+    margin-bottom: 1.75rem !important;
   }
-  .grid-3, .grid-4 {
-    grid-template-columns: 1fr;
+  .grid-3, .grid-4, .grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+  .container {
+    padding: 0 1rem !important;
+  }
+  .btn-lg {
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.95rem !important;
+    width: 100% !important;
   }
   .modal-content {
-    max-height: 95vh;
+    max-height: 92vh !important;
     padding: 1.25rem !important;
+    border-radius: var(--radius-md) !important;
   }
   .floating-whatsapp {
-    width: 52px;
-    height: 52px;
-    bottom: 1.25rem;
-    right: 1.25rem;
+    width: 50px !important;
+    height: 50px !important;
+    bottom: 1rem !important;
+    right: 1rem !important;
   }
 }
 
