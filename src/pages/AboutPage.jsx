@@ -30,7 +30,7 @@ export default function AboutPage({ onOpenQuoteModal }) {
       {/* Company Introduction */}
       <section style={{ padding: '5rem 0', backgroundColor: '#FFFFFF' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+          <div className="about-grid-2">
             <div>
               <span className="section-subtitle" style={{ textAlign: 'left' }}>Who We Are</span>
               <h2 style={{ fontSize: '2.25rem', color: '#0F172A', marginBottom: '1.25rem', fontFamily: 'var(--font-heading)' }}>
@@ -88,7 +88,7 @@ export default function AboutPage({ onOpenQuoteModal }) {
       {/* Vision & Mission */}
       <section style={{ padding: '4rem 0', backgroundColor: '#F8FAFC', borderTop: '1px solid #E2E8F0', borderBottom: '1px solid #E2E8F0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+          <div className="about-grid-2">
             
             <div className="card" style={{ padding: '2.5rem', borderLeft: '4px solid #F59E0B' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>

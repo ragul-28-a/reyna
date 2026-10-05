@@ -47,13 +47,9 @@ export default function ServicesPage({ onOpenQuoteModal }) {
               return (
                 <div
                   key={service.id}
-                  className="card"
+                  className="card service-card-grid"
                   style={{
-                    padding: '2.5rem',
-                    display: 'grid',
-                    gridTemplateColumns: '80px 1fr 240px',
-                    gap: '2rem',
-                    alignItems: 'center',
+                    padding: '2rem 1.5rem',
                     borderLeft: idx % 2 === 0 ? '4px solid #F59E0B' : '4px solid #06B6D4'
                   }}
                 >

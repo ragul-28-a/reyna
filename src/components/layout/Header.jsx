@@ -161,7 +161,7 @@ export default function Header({ onOpenQuoteModal }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <button
               onClick={() => onOpenQuoteModal()}
-              className="btn btn-primary btn-sm"
+              className="btn btn-primary btn-sm hide-mobile"
               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
             >
               Get a Quote <ChevronRight size={15} />

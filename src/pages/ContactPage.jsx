@@ -61,7 +61,7 @@ export default function ContactPage() {
       <section style={{ padding: '5rem 0', backgroundColor: '#F8FAFC' }}>
         <div className="container">
           
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '3rem', alignItems: 'flex-start' }}>
+          <div className="contact-grid">
             
             {/* Left Col: Contact Info Cards */}
             <div>

@@ -15,7 +15,7 @@ export default function Hero({ onOpenQuoteModal }) {
     }}>
       <div className="container" style={{ position: 'relative', zIndex: 10 }}>
         
-        <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '3rem', alignItems: 'center' }}>
+        <div className="hero-grid">
           
           {/* Left Hero Text */}
           <div>

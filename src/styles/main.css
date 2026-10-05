@@ -198,6 +198,46 @@ img {
   gap: 1.5rem;
 }
 
+/* Responsive Grid Classes for Hero, About, Services, Contact */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.service-card-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr 220px;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .hero-grid, .about-grid-2, .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .service-card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+}
+
 .card {
   background: var(--color-white);
   border-radius: var(--radius-md);
