@@ -310,12 +310,59 @@ img {
   background-color: #128C7E;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Responsive Breakpoints & Device Utility Classes */
+.show-tablet {
+  display: none !important;
+}
+
+.hide-tablet {
+  display: flex;
+}
+
+.hide-mobile {
+  display: inline-flex;
+}
+
+/* Tablet & iPad (<= 1024px) */
+@media (max-width: 1024px) {
+  .show-tablet {
+    display: block !important;
+  }
+  .hide-tablet {
+    display: none !important;
+  }
   .section-title {
-    font-size: 1.75rem;
+    font-size: 2rem;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Mobile & Small Phones (<= 640px) */
+@media (max-width: 640px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .section-desc {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
   }
   .grid-3, .grid-4 {
     grid-template-columns: 1fr;
   }
+  .modal-content {
+    max-height: 95vh;
+    padding: 1.25rem !important;
+  }
+  .floating-whatsapp {
+    width: 52px;
+    height: 52px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
 }
+
